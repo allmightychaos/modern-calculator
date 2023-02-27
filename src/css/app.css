@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,700");
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("/src/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.interface {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  max-width: 450px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */ /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.interface:hover {
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 102, 102, 0.7);
+  transition: 0.1s ease-in-out;
+}
+.interface:hover button {
+  color: rgba(255, 255, 255, 0.8);
+}
+.interface:hover .button {
+  box-shadow: inset 0px 0px 0px 1px rgba(50, 50, 50, 0.4);
+}
+.interface td, .interface button {
+  max-width: 110px;
+}
+
+.interface, .buttons {
+  color: white;
+  background: rgba(30, 30, 30, 0.8);
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+.interface:hover, .buttons:hover {
+  background: rgba(30, 30, 30, 0.9);
+  transition: all 0.2s ease-in-out;
+}
+
+.result {
+  text-align: right;
+  font-size: 1.5rem;
+}
+.result td {
+  padding: 0 50px;
+}
+.result td.temp-result {
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 0 0 0 50px;
+}
+
+.row {
+  text-align: center;
+}
+.row td {
+  width: 90px;
+  height: 92px;
+  border-radius: 10px;
+  transition: background-color 0.1s ease-in-out;
+}
+.row td:hover button {
+  color: rgb(255, 255, 255);
+  transition: all 0.1s ease-in-out;
+}
+.row .button:hover {
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 102, 102, 0.7);
+}
+.row td:active {
+  background-color: rgba(0, 102, 102, 0.4);
+  transition: background-color 0.1s ease-in-out;
+}
+
+.special {
+  background: rgba(0, 76, 76, 0.3);
+  border-radius: 0;
+}
+
+button {
+  background: none;
+  width: 110px;
+  height: 92px;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.3rem;
+  transition: all 0.1s ease-in-out;
+}/*# sourceMappingURL=app.css.map */
